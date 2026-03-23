@@ -1,0 +1,11 @@
+{
+  "name": "agentic-hello-world",
+  "image": "mcr.microsoft.com/devcontainers/php:1-8.3-bookworm",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "php.validate.executablePath": "/usr/local/bin/php"
+      }
+    }
+  }
+}
