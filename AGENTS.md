@@ -3,22 +3,37 @@
 ## Objective
 Maintain a Laravel app where:
 
-- `/hello` returns "Hello World"
-- All changes must pass CI
-- Changes must go through pull requests
+- /hello returns "Hello World"
+- all changes pass CI
+- all changes go through pull requests
 
-## Rules
+## Operating Rules
 
-1. Do not modify CI workflow unless explicitly instructed.
-2. Do not break existing tests.
-3. All new features must include tests.
-4. Keep changes minimal and focused.
-5. Prefer modifying existing code over adding new files.
+1. Never commit or push directly to main.
+2. Work only on feature branches.
+3. Do not modify CI workflow unless explicitly instructed.
+4. Do not break existing tests.
+5. All behavior changes must include or update tests.
+6. Keep changes minimal, focused, and reversible.
+7. Prefer modifying existing files over adding new files.
+8. Before proposing merge, run local verification commands.
 
-## Verification
+## Local Verification
 
-The system is correct if:
+Run:
 
-- `php artisan test` passes
-- `/hello` returns "Hello World"
+php artisan test
 
+## Merge Conditions
+
+A change is acceptable only if:
+
+- php artisan test passes locally
+- GitHub Actions CI passes
+- the change is submitted through a pull request
+
+## Protected Invariant
+
+The system must continue to satisfy:
+
+- /hello returns "Hello World"
