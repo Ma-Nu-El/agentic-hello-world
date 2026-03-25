@@ -3,13 +3,13 @@
 ## Objective
 Maintain a Laravel app where:
 
-- `/hello` returns "Hello World"
+- /hello returns "Hello World"
 - all changes pass CI
 - all changes go through pull requests
 
 ## Operating Rules
 
-1. Never commit or push directly to `main`.
+1. Never commit or push directly to main.
 2. Work only on feature branches.
 3. Do not modify CI workflow unless explicitly instructed.
 4. Do not break existing tests.
@@ -22,18 +22,18 @@ Maintain a Laravel app where:
 
 Run:
 
-```bash
 php artisan test
-```
+
 ## Merge Conditions
 
 A change is acceptable only if:
 
-- `php artisan test` passes locally
+- php artisan test passes locally
 - GitHub Actions CI passes
 - the change is submitted through a pull request
+
 ## Protected Invariant
 
 The system must continue to satisfy:
 
-`/hello` returns "Hello World"
+- /hello returns "Hello World"
