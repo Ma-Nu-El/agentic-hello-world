@@ -11,6 +11,6 @@ class HelloRouteTest extends TestCase
         $response = $this->get('/hello');
 
         $response->assertStatus(200);
-        $response->assertSeeText('Hello World');
+        $response->assertSeeText('Hello from agent');
     }
 }
