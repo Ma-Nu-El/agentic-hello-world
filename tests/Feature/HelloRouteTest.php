@@ -6,7 +6,7 @@ use Tests\TestCase;
 
 class HelloRouteTest extends TestCase
 {
-    public function test_hello_route_returns_hello_world(): void
+    public function test_hello_route_returns_hello_from_agent(): void
     {
         $response = $this->get('/hello');
 
