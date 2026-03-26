@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/hello', function () {
     return 'Hello from agent';
 });
+
+Route::get('/ping', function () {
+    return 'pong';
+});
