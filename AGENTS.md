@@ -36,4 +36,4 @@ A change is acceptable only if:
 
 The system must continue to satisfy:
 
-- /hello returns "Hello World"
+- /hello returns "Hello from agent"
